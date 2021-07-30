@@ -1,14 +1,10 @@
-# Copyright (c) 2015 Tim Niederhausen (tim@rnc-ag.de)
-# Distributed under the Boost Software License, Version 1.0.
-# (See accompanying file LICENSE_1_0.txt or copy at http://www.boost.org/LICENSE_1_0.txt)
-
-cmake_minimum_required(VERSION 3.0)
+cmake_minimum_required(VERSION 3.10)
 
 project(RapidXML)
 
-set(CMAKE_CXX_STANDARD 11)
+set(CMAKE_CXX_STANDARD 17)
 
-option(RAPIDXML_BUILD_TESTS "Build tests as well" ON)
+option(RAPIDXML_BUILD_TESTS "Build integrated tests suite." ON)
 
 add_library(rapidxml INTERFACE)
 
